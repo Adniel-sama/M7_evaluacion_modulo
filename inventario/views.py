@@ -67,10 +67,10 @@ class CategoriaUpdateView(LoginRequiredMixin, UpdateView):
     success_url = reverse_lazy('lista_categorias')
 
 
-class CategoriaDeleteView(LoginRequiredMixin, DeleteView):
-    model = Categoria
-    template_name = "categorias/eliminar.html"
-    success_url = reverse_lazy('lista_categorias')
+# class CategoriaDeleteView(LoginRequiredMixin, DeleteView):
+#     model = Categoria
+#     template_name = "categorias/eliminar.html"
+#     success_url = reverse_lazy('lista_categorias')
 
 
 # Etiquetas
@@ -95,7 +95,7 @@ class EtiquetaUpdateView(LoginRequiredMixin, UpdateView):
     success_url = reverse_lazy('lista_etiquetas')
 
 
-class EtiquetaDeleteView(LoginRequiredMixin, DeleteView):
-    model = Etiqueta
-    template_name = "etiquetas/eliminar.html"
-    success_url = reverse_lazy('lista_etiquetas')
+# class EtiquetaDeleteView(LoginRequiredMixin, DeleteView):
+#     model = Etiqueta
+#     template_name = "etiquetas/eliminar.html"
+#     success_url = reverse_lazy('lista_etiquetas')

@@ -32,7 +32,7 @@ class DetalleProducto(models.Model):
 class Producto(models.Model):
     nombre = models.CharField(max_length=255)
     descripcion = models.TextField(blank=True)
-    precio = models.DecimalField(max_digits=10, decimal_places=2)
+    precio = models.IntegerField()
     categoria = models.ForeignKey(Categoria, on_delete=models.PROTECT, related_name='productos')
     etiquetas = models.ManyToManyField(Etiqueta, blank=True, related_name='productos')
     detalle = models.OneToOneField(DetalleProducto, on_delete=models.CASCADE, null=True, blank=True, related_name='producto')
