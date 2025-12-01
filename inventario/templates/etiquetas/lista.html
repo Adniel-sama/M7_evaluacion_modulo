@@ -24,7 +24,7 @@
                 <td>
                     {% if user.is_authenticated %}
                         <a href="{% url 'editar_etiqueta' etiqueta.pk %}" class="btn btn-sm btn-warning">Editar</a>
-                        <!-- <a href="{% url 'eliminar_etiqueta' etiqueta.pk %}" class="btn btn-sm btn-danger">Borrar</a> -->
+                        {% comment %} <a href="{% url 'eliminar_etiqueta' etiqueta.pk %}" class="btn btn-sm btn-danger">Borrar</a> {% endcomment %}
                     {% else %}
                         <span class="text-muted">Solo lectura</span>
                     {% endif %}
